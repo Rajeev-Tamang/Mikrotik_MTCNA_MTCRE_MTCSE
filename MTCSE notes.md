@@ -29,4 +29,12 @@
 ***Note: If you do not use certain services , its recommended to disable it***
   ***Changing service port is also highly recommeded , default winbox port is 8291**
 
- 
+***5. How do we disable MAC access.?*** 
+- Tools > Mac server > Mac telnet / Mac winbox / Mac Ping.
+![Mac ping](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mac%20ping%20%20server.jpg)
+
+![Mac Telnet](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mac%20telnet%20server.jpg)
+
+![Mac winbox](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mac%20winbox%20server.jpg)
+
+***Note: In production network is not a good pratice to enable mac access, mac ping mac telnet.***
