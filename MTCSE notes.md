@@ -38,3 +38,9 @@
 ![Mac winbox](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mac%20winbox%20server.jpg)
 
 ***Note: In production network is not a good pratice to enable mac access, mac ping mac telnet.***
+
+**6. How do we diasble neighbor discovery?**
+- IP > Neighbor > Discovery Setting >  Interface > None > Apply.
+![Neigbor discovery Disable](https://github.com/Rajeev-Tamang/MTCSE/blob/main/neighbor%20disable.jpg)
+
+***Note: We see neighbor in winbox table, it is highly recommended to disable the Neighbor discovery***
