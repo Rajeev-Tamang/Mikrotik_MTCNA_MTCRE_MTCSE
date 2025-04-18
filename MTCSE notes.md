@@ -73,3 +73,22 @@
 ![Block youtube.com](https://github.com/Rajeev-Tamang/MTCSE/blob/main/forward%20chain%20youtube%20block%202.jpg)
 
 ![Block youtube.com 3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/forward%20chain%20youtube%20block%203.jpg)
+
+
+**9. How do we use Output Chain**
+
+- Output chain processess packets originatin from the router itself.
+
+- Suppose we want to Block the icmp packet form our mikrotik to cloudflare dns 1.1.1.1 
+  then, 
+- IP > Firewall > Filter Rules > ADD > Chain = Output > Protocol = ICMP > out.interface 
+  = Ether1 > Action = drop > Apply > OK.
+
+![output chain](https://github.com/Rajeev-Tamang/MTCSE/blob/main/outputchain%201.jpg)
+
+![Output chain2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/output%20chain%202.jpg)
+
+![Output Chain3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/output%20chain3.jpg)
+
+
+
