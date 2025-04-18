@@ -91,4 +91,14 @@
 ![Output Chain3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/output%20chain3.jpg)
 
 
+**10. Soure NAT**
 
+- IP > Firewall > NAT > ADD > Chain = Srcnat > Action = masquerade > Apply > OK.
+
+
+**11. How can i redirect traffic from one port to another?**
+
+- Destination NAT or dstant. It is most commonly used to make hosts on a private 
+  netwrok to be accessible from the internet.
+
+- 
