@@ -44,3 +44,14 @@
 ![Neigbor discovery Disable](https://github.com/Rajeev-Tamang/MTCSE/blob/main/neighbor%20disable.jpg)
 
 ***Note: We see neighbor in winbox table, it is highly recommended to disable the Neighbor discovery***
+
+
+**7. How do we disable ping request from firewall?**
+- IP > Firewall > ADD > Chain = Input > source address=0.0.0.0/0 > Protocol= ICMP > Action = drop > Apply > Ok
+
+![Firewall rule 1](https://github.com/Rajeev-Tamang/MTCSE/blob/main/firewall%20rule%201.jpg)
+
+![Firewall rule 2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/firewall%20rule%202.jpg)
+
+![Firewall rule 3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/firewall%20rule%203.jpg)
+
