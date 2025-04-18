@@ -22,6 +22,7 @@
 ![Allowed Ip address](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Login%20allowed.jpg)
 -Now User: rajeev with ip address 172.16.210.239 is allowed to access.
 
-
+**4. How do we disable and Change service port?**
+- IP > Services > enable U+2705
 
  
