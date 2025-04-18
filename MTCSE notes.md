@@ -19,5 +19,9 @@
 
 ![Login Failed](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Login%20Failed.jpg)
 - Since ip address is 172.16.210.233/24 , it is not accesible. Lets Change the ip address and try again.
+![Allowed Ip address](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Login%20allowed.jpg)
+-Now User: rajeev with ip address 172.16.210.239 is allowed to access.
+
+
 
  
