@@ -5,5 +5,6 @@
 
 **2. How to upgrade router board firmware?**
 - System > RouterBoard > Upgrade > Reboot for change.
+![Router Board Firmware Upgrade](https://github.com/Rajeev-Tamang/MTCSE/blob/main/router%20Board%20firmware%20upgradejpg.jpg)
 
 
