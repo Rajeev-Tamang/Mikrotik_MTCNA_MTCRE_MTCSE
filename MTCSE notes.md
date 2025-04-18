@@ -13,7 +13,7 @@
  
 - Ip address of mikrotik router is: 172.16.210.210/24
 - Allowed address for user rajeev is : 172.16.210.239/24
-![Allowed user and ip address](https://github.com/Rajeev-Tamang/MTCSE/blob/main/allowed%20user%20and%20ip%20addre)
+![Allowed user and ip address](https://github.com/Rajeev-Tamang/MTCSE/blob/main/allowed%20user%20and%20ip%20address.jpg)
 
 ![IP address before](https://github.com/Rajeev-Tamang/MTCSE/blob/main/ip%20address%20before.jpg)
 
