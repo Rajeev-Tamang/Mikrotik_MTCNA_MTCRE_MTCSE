@@ -55,3 +55,21 @@
 
 ![Firewall rule 3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/firewall%20rule%203.jpg)
 
+
+**8. How to use Forward Chain**
+- Forward chain ->passing through our mikrotik router. Packet arrives in mikrotik and it determine what to do with the packet that is passing through 
+  mikrotik to outer network.
+
+- Suppose you want to block the users from accessing youtube.com.
+
+- IP > Firewall > Layer 7 Protocols > ADD > Name:Youtube > Regexp: www.Youtube.com > 
+  Apply > OK
+
+![layer 7 protocol define for blocking youtube](https://github.com/Rajeev-Tamang/MTCSE/blob/main/layer7protocol.jpg)
+- IP > Firewall > Fiter rules > ADD > Chain = Forward > Src.address = 172.16.210.0/24 > Advance > Layer 7 Protocols = Youtube > Action = Drop > Apply > OK .
+
+![Block youtube.com Forward Chain](https://github.com/Rajeev-Tamang/MTCSE/blob/main/forwardchain%20youtube%20block1.jpg)
+
+![Block youtube.com](https://github.com/Rajeev-Tamang/MTCSE/blob/main/forward%20chain%20youtube%20block%202.jpg)
+
+![Block youtube.com 3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/forward%20chain%20youtube%20block%203.jpg)
