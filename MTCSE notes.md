@@ -162,3 +162,8 @@
 ![addresslist4](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist4.jpg)
 ![addresslist5](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist5.jpg)
 
+**14. How can we view and Manage the active connections on Mikrotik router.?**
+- IP > Firewall > Connection > 
+- If we see that tracking is set to no, then we will not be seeing any active 
+ connection which may also result in internet no working.
+![Connection Tracking](https://github.com/Rajeev-Tamang/MTCSE/blob/main/ConnectionTracking.jpg)
