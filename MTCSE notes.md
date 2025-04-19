@@ -138,10 +138,10 @@
 ![Mgl account](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle5.jpg)
 
 - IP > routes > Add > Gateway > ether2 > Routing mark = HR Department > Apply > OK
-!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle6.jpg)
+![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle6.jpg)
 
 - IP > routes > Add > Gateway > ether3 > Routing mark = Account Department > Apply > OK
-!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/mangle7.jpg)
+![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mangle7.jpg)
 
 
 
