@@ -167,3 +167,12 @@
 - If we see that tracking is set to no, then we will not be seeing any active 
  connection which may also result in internet no working.
 ![Connection Tracking](https://github.com/Rajeev-Tamang/MTCSE/blob/main/ConnectionTracking.jpg)
+
+# 15. How do we use Mikrotik Firewall raw?
+
+- Mikrotik routers include a feature called the "raw" firewall, which is used to hanel 
+  packet at a lower level compared to the traditional firewall (filter rules). The raw 
+  tables allows you to bypass connection tracking, which can be beneficial for 
+  performance and certain security.
+
+ 
