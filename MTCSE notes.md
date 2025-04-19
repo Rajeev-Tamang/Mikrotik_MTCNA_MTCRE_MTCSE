@@ -115,5 +115,33 @@
 
 - Now when client access the ***rajeev.com:80*** it will be redirected to port 8080 and will be determine either allow or deny the request.
 
+**12. Why and how to use mangle routing?***
+- Mangle marking routing is used for policy-based routing. It allows you to route 
+  specfic packet based on criteria beyong just their destionation IP address.
+
+- Lets consider we have two department HR with ip pool of 192.168.10.0/25 and Account 
+ with ip pool of 192.168.10.128/25. Also we have two isp uplink , Vianet with ip 
+ 172.16.1.1/24 and Dish Home with ip 172.16.2.1/24. we want HR traffic via vianet and 
+ Account traffic via DishHome.
+
+![IPaddress](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle1.jpg)
+- IP > Firewall > Mangle > Add > Chain = Prerouting > src.address = 192.168.10.0/25 
+ Action = mark routing > New routing mark = HR Department .
+
+![MAngle1](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle2.jpg)
+!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle3.jpg)
+
+- IP > Firewall > Mangle > Add > Chain = Prerouting > src.address = 192.168.10.128/25 
+ Action = mark routing > New routing mark = Account Department .
+
+![Mangle Account](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle4.jpg)
+![Mgl account](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle5.jpg)
+
+- IP > routes > Add > Gateway > ether2 > Routing mark = HR Department > Apply > OK
+!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle6.jpg)
+
+- IP > routes > Add > Gateway > ether3 > Routing mark = Account Department > Apply > OK
+!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/mangle7.jpg)
+
 
 
