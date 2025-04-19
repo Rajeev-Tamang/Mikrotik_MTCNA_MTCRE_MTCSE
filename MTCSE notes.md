@@ -144,4 +144,21 @@
 ![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/mangle7.jpg)
 
 
+**13. How can we group IP address  into list for easier rule management?**
+- we can use addresslist if we want efficient and organized firewall rule  management, 
+  especailly when dealing with numbers of ip address.
+
+  - IP > Firewall > address list > Add > Name = xxxx > address = 1.1.1.1 / x.x.x.x > 
+     Apply > OK
+
+  - Repeat with other ip but same addresslist.
+ 
+  ![addresslist](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist1.jpg)
+
+  - Ip > Firewall > Filter rules > Add > Chain = input > advance > Src.address list > address-list-ip >  Action = Drop > Apply > oK. 
+
+![addresslist2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist2.jpg)
+![addresslist3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist3.jpg) 
+![addresslist4](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist4.jpg)
+![addresslist5](https://github.com/Rajeev-Tamang/MTCSE/blob/main/addresslist5.jpg)
 
