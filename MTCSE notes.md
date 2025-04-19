@@ -104,4 +104,16 @@
 - But we can use it to redirect it to another port, suppose traffic is coming for 80 port we can redirect it to 8080 ports.
 
 - IP > webproxy >  Enable > Apply >  OK
-- 
+  
+- IP > Webproxy > Access > Add > DST = rajeev.com > Action = allow/deny > Apply > ok
+
+![Web proxy](https://github.com/Rajeev-Tamang/MTCSE/blob/main/webproxy1.jpg)
+
+![dstnat1](https://github.com/Rajeev-Tamang/MTCSE/blob/main/dstnat1.jpg)
+
+![dstnat2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/dstnat2.jpg)
+
+- Now when client access the ***rajeev.com:80*** it will be redirected to port 8080 and will be determine either allow or deny the request.
+
+
+
