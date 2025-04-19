@@ -91,7 +91,7 @@
 ![Output Chain3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/output%20chain3.jpg)
 
 
-**10. Soure NAT**
+**10. Source NAT**
 
 - IP > Firewall > NAT > ADD > Chain = Srcnat > Action = masquerade > Apply > OK.
 
@@ -101,4 +101,7 @@
 - Destination NAT or dstant. It is most commonly used to make hosts on a private 
   netwrok to be accessible from the internet.
 
+- But we can use it to redirect it to another port, suppose traffic is coming for 80 port we can redirect it to 8080 ports.
+
+- IP > webproxy >  Enable > Apply >  OK
 - 
