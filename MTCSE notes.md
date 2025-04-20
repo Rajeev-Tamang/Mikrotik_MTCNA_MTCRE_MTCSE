@@ -175,4 +175,12 @@
   tables allows you to bypass connection tracking, which can be beneficial for 
   performance and certain security.
 
- 
+## 16. How do we configure PPPTP server & client?
+
+- Step 1: Enable PPPTP server.
+- Step 2: Creat pool 
+- Step 3: Create profile
+- Step 4: Create user
+- Step 5: Check from client PC.
+
+
