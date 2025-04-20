@@ -175,12 +175,29 @@
   tables allows you to bypass connection tracking, which can be beneficial for 
   performance and certain security.
 
-## 16. How do we configure PPPTP server & client?
+## 16. How do we configure PPTP server & client?
 
 - Step 1: Enable PPPTP server.
+   - PPP > PPTPSERVER > ENABLE > APPLY > OK
+ ![PPPTP SERVER ENABLE](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP1.jpg)
 - Step 2: Creat pool 
-- Step 3: Create profile
-- Step 4: Create user
-- Step 5: Check from client PC.
+    - IP > POOL > ADD > NAME = XXXX > ADDRESS = 192.168.200.2 - 192.168.200.254> APPLY  
+       > OK 
+![IP POOOL](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP3.jpg)
 
+- Step 3: Create profile
+   - PPP > PROFILES > ADD > NAME = XXXX > LOCAL ADDRESS = 192.168.200.1 > REMOTE  
+      ADDRESS = PPPTP-IP-POOL > LIMITS >  RATE LIMIT (RX/TX): 2M/2M > APPLY > OK
+![PPTP PROFILE](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP4.jpg)
+![PPTP PROFILE 2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP5.jpg)
+
+- Step 4: Create user & password.
+    - PPP > SECRETS > ADD > NAME =rajeev > Password = 12345678 > SERVICE = PPTP > PROFILE > PPTP PROFILE 2M > APPLY OK
+
+ - Step 5: PPTP SERVER BINDING.
+    - PPP > INTERFACE > PPTP SERVER BINDING > APPLY OK.
+![PPTP SERVER BINDING](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP7.jpg)
+      
+- Step 6: Check from client PC.
+![PPTP_VPN](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP8.jpg)
 
