@@ -129,7 +129,7 @@
  Action = mark routing > New routing mark = HR Department .
 
 ![MAngle1](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle2.jpg)
-!(https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle3.jpg)
+![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/Mangle3.jpg)
 
 - IP > Firewall > Mangle > Add > Chain = Prerouting > src.address = 192.168.10.128/25 
  Action = mark routing > New routing mark = Account Department .
@@ -200,4 +200,10 @@
       
 - Step 6: Check from client PC.
 ![PPTP_VPN](https://github.com/Rajeev-Tamang/MTCSE/blob/main/PPPTP8.jpg)
+
+
+## 17. How to configure L2TP vpn?
+ - The process is similar to PPTP. This one will be your task, try yourself.
+
+## 18. How to Configure SSTP VPN ? 
 
