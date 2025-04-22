@@ -209,6 +209,45 @@
 
 ## 20.How to configure OpenVpn Client & Server ?
 
+- STEP 1 : Create CA.
+       - SYSTEM > CERTIFICATES > ADD > NAME = XXXX > COMMAN NAME = XXXX > KEY USAGE > 
+         KEY CRT.SIGN & CRL SIGN > APPPLY > SIGN > CA CRL HOST = PUBLIC IP/WAN IP OF 
+         MIKROTIK > APPLY > OK
+![OPENVPN1](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn1.jpg)
+![OPENVPN2](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn2.jpg)
+
+- STEP 2: CREATE SERVER CERTIFICATE.
+       - SYSTEM >  CERTIFICATE > ADD > NAME = XXX > COMMON NAME = XXXX > KEY USAGE = 
+         DIGITAL SIGNATURE , KEY ENCIPHERMENT & TLS SERVER > APPLY > SIGN > CA = CA > 
+         APPLY > GENERAL > TRUST = ENABLE > APPLY > OK 
+![OPENVPN3](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn3.jpg)
+![OPENVPN4](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn4.jpg)
+
+-STEP 3: CREATE CLIENT CERTIFICATE.
+        - SYSTEM >  CERTIFICATE > ADD > NAME = XXX > COMMON NAME = XXXX > KEY USAGE = 
+          TLS CLIENT > APPLY > SIGN > CA = CA > 
+          APPLY > GENERAL > TRUST = ENABLE > APPLY > OK 
+
+![OPENVPN5](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn5.jpg)
+![OPENVPN6](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn6.jpg)
+
+- STEP 4 : CREATE IP POOL FOR VPN CLIENT
+     - IP > POOL > ADD > NAME = OPENVPN-POOL > ADDRESS = 172.16.112.2-172.16.112.254
+![OPENVPN7](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn7.jpg)
+
+- STEP 5: CREATE OPENVPN PROFILE.
+  - PPP > PROFILE > ADD > NAME = OVPN > LOCAL ADDRESS = 172.16.124.1 > REMOTE- 
+    ADDRESS = OPENVPN-POOL
+![OPENVPN8](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn8.jpg)
+
+- STEP 6 : CREATE USERNAME AND PASSWORD OF VPN USER.
+    - PPP > SECREATS > ADD > NAME = TEST > PASSWORD = 12345678910 > SERVICE = OVPN > 
+      PROFLE = OVPN > APPLY > OK .
+![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn9.jpg)
+
+- STEP 7 : OPENVPN SERVER SETUP.
+    
+
 ## 21.How to Configure Wiregaurd VPN Server & Client? 
 - WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and 
   more useful than IPsec while avoiding massive headaches. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a 
