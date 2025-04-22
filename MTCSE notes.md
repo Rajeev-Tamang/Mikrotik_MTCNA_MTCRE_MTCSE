@@ -231,6 +231,8 @@
 ![OPENVPN5](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn5.jpg)
 ![OPENVPN6](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn6.jpg)
 
+***EXPORT THE CA AND CLIENT CERTIFICATED WITH PASSWORD.***
+
 - STEP 4 : CREATE IP POOL FOR VPN CLIENT
      - IP > POOL > ADD > NAME = OPENVPN-POOL > ADDRESS = 172.16.112.2-172.16.112.254
 ![OPENVPN7](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn7.jpg)
@@ -246,7 +248,15 @@
 ![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn9.jpg)
 
 - STEP 7 : OPENVPN SERVER SETUP.
-    
+     - PPP > OPENVPN  SERVER > ADD > NAME = XXXX > DEFAULT PROFILE = OVPN > CERTIFICATE > SERVER > REQUIRED CLIENT CERTIFICATE = YES > REDIRECT GATEWAY > DEF1 > APPLY > OK 
+    ![](https://github.com/Rajeev-Tamang/MTCSE/blob/main/openvpn10.jpg)
+
+- *Export.opvn from openvpn server tab , it is stored in files of mikrotik and download it to your 
+   local machine.*
+ - *Allow ovpn port 1194, IP > FIREWALL > ADD > CHAIN = INPUT > PROTOCOL > TCP > DST.PORT = 1194 > 
+    ACTION = ACCEPT > APPLY > OK*
+ - *SRC.NAT WITH MASQURADE*
+ - *ALL SET CONFIG IN IMPORT THE DOWNLOADED .OVPN FILE IN , CLIETN END DEVICE*
 
 ## 21.How to Configure Wiregaurd VPN Server & Client? 
 - WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and 
