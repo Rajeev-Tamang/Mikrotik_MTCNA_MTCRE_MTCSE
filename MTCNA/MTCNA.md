@@ -102,6 +102,18 @@
 graph LR
 PC{{PC-LAN}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))---|30.30.30.0/24|PC2{{PC-2_LAN}}
   ```
+### MKT-1-CONFIG
+- ![image](https://github.com/user-attachments/assets/e0ba864b-caa5-4a93-8772-dcb24bfdb2ed)
+- ![image](https://github.com/user-attachments/assets/5b2dc00c-9713-46db-aa1b-339b64ed40af)
+
+### MKT-2-CONFIG
+- ![image](https://github.com/user-attachments/assets/0a6bfd0d-6c97-457b-b1ba-9b7143aa29f6)
+- ![image](https://github.com/user-attachments/assets/fb6a15da-65c3-4ab5-b9df-e4fda4da7a07)
+
+
+## How to config OSPF ?
+
+- 
 
 
 
