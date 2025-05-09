@@ -9,8 +9,7 @@
 ## 2.How to configure uplink in RouterOSv7 installed router.
 - ```mermaid
   graph TB
-  ISP-->Mikrotik
-  Mikrotik-->LAN/PC/Station
+  ISP[Internet_service_provide]<-->Mikrotik((MIKROTIK-ROUTER))<-->LAN{{PC/Station}}
   ```
   - Step 1 : IP address assign to WAN/LAN port.
 ![image](https://github.com/user-attachments/assets/15229ded-0518-48ee-bd4d-0e8b0ee14ad0)
@@ -101,7 +100,7 @@
 ## 13.How to configure  static routing?
  ```mermaid
 graph LR
-PC{{PC-LAN}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))---|30.30.30.0/24|PC2([PC-2_LAN])
+PC{{PC-LAN}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))---|30.30.30.0/24|PC2{{PC-2_LAN}}
   ```
 
 
