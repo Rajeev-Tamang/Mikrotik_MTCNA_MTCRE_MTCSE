@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/938da5cc-31ac-483f-9aed-232df8ccc6f3)# MikroTik Certified Network Associate
+# MikroTik Certified Network Associate
 
 ## 1.How to upgrade RouterOS version 6 to 7.
 - SYSTEM > PACKAGE > CHECK FOR UPDATE > CHANNEL: *UPGRADE* > DOWNLOAD & INSTALL.
@@ -101,7 +101,7 @@
 ## 13.How to configure  static routing?
  ```mermaid
 graph LR
-PC[PC-LAN]---|20.20.20.0/24|MKT-1[MKT-1]---|192.168.50.0/30|MKT-2[MKT-2]---|30.30.30.0/24|PC2[PC-2_LAN]
+PC{{PC-LAN]}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))---|30.30.30.0/24|PC2([PC-2_LAN])
   ```
 
 
