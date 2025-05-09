@@ -101,7 +101,7 @@
 ## 13.How to configure  static routing?
  ```mermaid
 graph LR
-PC[PC-LAN<br>20.20.20.2/24]---MKT-1[20.20.20.1] 
+PC[PC-LAN]---|20.20.20.0/24|MKT-1[MKT-1]---|192.168.50.0/30|MKT-2[MKT-2]---|30.30.30.0/24|PC[PC-2_LAN]
   ```
 
 
