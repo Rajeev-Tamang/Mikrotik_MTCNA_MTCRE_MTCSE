@@ -1,4 +1,4 @@
-# MikroTik Certified Network Associate
+![image](https://github.com/user-attachments/assets/938da5cc-31ac-483f-9aed-232df8ccc6f3)# MikroTik Certified Network Associate
 
 ## 1.How to upgrade RouterOS version 6 to 7.
 - SYSTEM > PACKAGE > CHECK FOR UPDATE > CHANNEL: *UPGRADE* > DOWNLOAD & INSTALL.
@@ -75,7 +75,38 @@
 ![image](https://github.com/user-attachments/assets/be7d33c9-b210-405c-8402-b7302631b6c2)
 
 ## 11. How to configure PPtP VPN server & client in routeros v7?
+- Create PPTP profile.
+- ![image](https://github.com/user-attachments/assets/4d5ba58b-dfe6-41f3-8023-66d97356be14)
+- Create Secret(Username/Password)
+- ![image](https://github.com/user-attachments/assets/ade83e9b-5b3b-41e3-aea5-c3dbe27513de)
+- Enable PPTP Server.
+- ![image](https://github.com/user-attachments/assets/be74d126-f456-476b-a8a9-f6eae5ea43fc)
+- Client side config (Gateway is your mikrotik public ip)
+- ![image](https://github.com/user-attachments/assets/add25159-c790-413d-bfae-31f39f0db1b7)
+
+## 12. How to configure L2TP VPN server & client in routeros v7?
+- create pool for l2tp client.
+- ![image](https://github.com/user-attachments/assets/d29e3941-2c07-4a3a-b309-1f7e52b83125)
+- Create profile
+- ![image](https://github.com/user-attachments/assets/be4ddfca-fbb2-48d1-a6e3-ebfd2089f362)
+- Create Secret
+- ![image](https://github.com/user-attachments/assets/2f6b746e-3ca2-43df-a71e-a528a4f0ddce)
+- Enable L2TP SERVER.
+- ![image](https://github.com/user-attachments/assets/f95bd101-7ae0-4a81-a401-325d008de303)
+- Client setup
+- ![image](https://github.com/user-attachments/assets/69375703-bdb4-4ab9-ba61-c6bcf9375b77)
+- ![image](https://github.com/user-attachments/assets/f73c8937-7b21-4f74-959d-ee2fd11acbe9)
 - 
+
+## 13.How to configure  static routing?
+ ```mermaid
+graph LR
+PC[PC-LAN<br>20.20.20.2/24]---MKT-1[20.20.20.1] 
+  ```
+
+
+
+
 
 
 
