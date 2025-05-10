@@ -111,7 +111,7 @@ PC{{PC-LAN}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))--
 - ![image](https://github.com/user-attachments/assets/fb6a15da-65c3-4ab5-b9df-e4fda4da7a07)
 
 
-## How to config OSPF ?
+## 14.How to config OSPF ?
 
 ```mermaid
 graph LR
@@ -119,8 +119,44 @@ LAN-1{{Site-1-LAN}}<-->192.168.10.0/24|SITE-1((SITE-1-MKT-1))<-->|172.16.1.0/32|
 ```
 - Step 1: Configure the ip address as shown in the figure.
 - Step 2: OSPF CONFIG IN MIKT-1
-    - ROUTING > OSPF >
+    - ROUTING > OSPF > INSTANCE >ADD NEW INSTANCE.
+![image](https://github.com/user-attachments/assets/4088eed5-259f-4ead-a1b7-4cd145718672)
+    - CREATE AREA 0
+![image](https://github.com/user-attachments/assets/c56a5b47-76d3-4900-9684-961a968ad61a)
+    - Create Interface template.
+![image](https://github.com/user-attachments/assets/39e5965c-c5a4-4fee-bab8-df24b6510207)
 
+- ***DO SAME PROCESS IN ROUTER 2, AND CHECK THE OSPF***
+
+  
+
+## 15. How to Configure BGP ?
+
+```mermaid
+graph LR
+LAN-1{{Site-1-LAN}}<-->192.168.10.0/24|SITE-1((SITE-1-MKT-1-AS-9498))<-->|172.16.1.0/32<br>eBGP|Site-2((SITE-2-MKT-2-AS-32934))<-->|192.168.20.0/24|LAN-2{{Site-2-LAN}}
+```
+- Step 1: Configure the ip as in figure.
+- Step 2: Create Address list (i.e the network that you want to advertise in eBGP).
+    - IP > FIREWALL > ADDRESSLIST >
+![image](https://github.com/user-attachments/assets/4bb092a4-239e-4bec-8746-9d6a5b340223)
+
+- Step 3: Craete BGP template.
+  ![image](https://github.com/user-attachments/assets/4be4c9f6-36fa-4ce4-8dd7-b8dc0ca76052)
+    - Output netwrok.
+  ![image](https://github.com/user-attachments/assets/0daba8f9-fb02-4b15-b365-570644ebcbf8)
+
+- Step 4:  Config similar in other side AS.
+
+
+## 16.How to config load balance?
+- **Its simple i will just guide you, and try it your self.**
+- suppose you have two uplink provider, i.e vianet and dishhome.
+- your internal lan pool is 192.168.10.0/24 and you want 192.168.10.1-192.168.10.127 goes via vianet and 192.168.10.128-192.168.10.254 goes via Dish Home , then.
+- Create tables in routing tab , for dishhome and vianet.
+- create Mangle, mark routing and tag that in tables as per required.
+- create route for them.
+  
 
 
 
