@@ -115,8 +115,12 @@ PC{{PC-LAN}}---|20.20.20.0/24|MKT-1((MKT-1))---|192.168.50.0/30|MKT-2((MKT-2))--
 
 ```mermaid
 graph LR
-LAN-1{{Site-1-LAN}}---|192.168.10.0/24|SITE-1((SITE-1-MKT-1))---|172.16.1.0/32|Site-2((SITE-2-MKT-2))---|192.168.20.0/24|LAN-2{{Site-2-LAN}}
+LAN-1{{Site-1-LAN}}<-->192.168.10.0/24|SITE-1((SITE-1-MKT-1))<-->|172.16.1.0/32|Site-2((SITE-2-MKT-2))<-->|192.168.20.0/24|LAN-2{{Site-2-LAN}}
 ```
+- Step 1: Configure the ip address as shown in the figure.
+- Step 2: OSPF CONFIG IN MIKT-1
+    - ROUTING > OSPF >
+
 
 
 
