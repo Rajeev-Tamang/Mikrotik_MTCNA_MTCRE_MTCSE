@@ -24,7 +24,7 @@ PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-1<br>Ether-3-lan side
   ## IPIP VPN:
 ```mermaid
 graph LR
-PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-1<br>IPIPtunnelEther-3-lan side :20.20.20.0/24))<-->|192.168.1.0/24|Mikrotik2((RB951-MKT-SITE-2<br>Lan network:30.30.30.0/24))---PC{{PC-Koshi-Branch}}
+PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-192.168.1.1/30<br>IPIPtunnel-10.10.10.1/30<br>Ether-3-lan side :20.20.20.0/24))<-->|192.168.1.0/30<br>10.10.10.0/30|Mikrotik2((RB951-MKT-SITE-192.168.1.2/30<br>IPIP tunnel-10.10.10.2/30<br>Lan network:30.30.30.0/24))---PC{{PC-Koshi-Branch}}
   ```
 - Step 1 : Config the P2P and Lan network in both end.
 - Step 2: Config IPIP Tunnel in CCR and RB951.
