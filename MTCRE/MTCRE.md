@@ -10,7 +10,7 @@ PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-1<br>Ether-3-lan side
 - ![image](https://github.com/user-attachments/assets/02d1643e-9f6f-4062-8a51-d5ae52ca0370)
 - Step 3: Create Interface for EoIP in CCR
   - Interface > EoIP > ADD > m
-  - Remote IP. (192.168.1.2/24)
+  - Remote IP. (192.168.1.1/24)
   - Self LAN interface MAC (internal)-eth3 mac address 
   -   - tunnel id = 1
   - ![image](https://github.com/user-attachments/assets/4346f62c-13a3-46f7-abaa-3e3527789bd1)
@@ -18,5 +18,9 @@ PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-1<br>Ether-3-lan side
 - Step 4: Bridge the Lan port and EoIP and Created the DHCP server in Bridge port.
    ![image](https://github.com/user-attachments/assets/7c9aff59-9542-42f6-afdc-aab79f387ad2)
    ![image](https://github.com/user-attachments/assets/b65fb113-ff26-41eb-890f-eeea2d733bae)
-- Step 5:  
+- Step 5: Do same in RB951 but do not create the DHCP server as the LAN will get ip from CCR.
+
+
+  ## IPIP VPN:
+  
 
