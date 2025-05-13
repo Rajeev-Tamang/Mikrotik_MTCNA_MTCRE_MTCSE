@@ -6,7 +6,7 @@ PC1{{PC-HO-side}}---|20.20.20.0/24|Mikrotik1((CCR-MIK-SITE-192.168.1.1/30<br>Eth
 ```
 ### Step 1: IP config in CCR-MKT 
  ![image](https://github.com/user-attachments/assets/8d1801df-5849-459f-9e50-bdb74b4728ee)
-###Step 2: Ip config in RB951-MKT
+### Step 2: Ip config in RB951-MKT
  ![image](https://github.com/user-attachments/assets/02d1643e-9f6f-4062-8a51-d5ae52ca0370)
 ### Step 3: Create Interface for EoIP in CCR
   - Interface > EoIP > ADD > m
